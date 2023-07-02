@@ -1,0 +1,85 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+* {
+    box-sizing: border-box;
+}
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+}
+
+.center {
+    text-align: center;
+}
+ /******************************************
+  /* LAYOUT
+  /*******************************************/
+
+
+img {
+    display: block;
+    margin: 0 auto;
+    max-width: 90%;
+    height: auto;
+}
+
+
+
+body {
+  background-image: url("img/TheEntireUniverse.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity value as desired */
+  background-image: url("/Users/uzoikejiofor/WebDevThings/NASAPicOfDay/img/NASAPhoto.jpg");
+  opacity: 1;
+  z-index: -1;
+}
+
+
+
+h1{
+    text-align: justify;
+    color:whitesmoke;   
+}
+
+h2{
+    text-align: justify;
+    color:whitesmoke;   
+}
+
+h3 {
+    text-align: justify;
+    font-size: 20px; /* Adjust the font size as desired */
+    font-weight: bold; /* Add the font-weight property */
+    color: whitesmoke;
+}
+
+
+.logo {
+    position: absolute;
+    width: 200px;
+    top: 20px;
+    right: 20px;
+}
+  
+
+
+/******************************************
+  /* ADDITIONAL STYLES
+  /*******************************************/
